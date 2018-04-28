@@ -1,0 +1,16 @@
+Specification
+helpers.py
+distances
+Implement distances in such a way that, given two strings, a and b, it calculates the edit distance from a to b, returning (as a list of lists) the matrix of operational costs incurred along the way. Treat the matrix’s top-left corner as [0][0] and the matrix’s bottom-right corner as [len(a)][len(b)]. Stored in each element of the matrix should be a tuple, (cost, operation), where cost is an int and operation is an Operation.
+
+templates/index.html
+Implement templates/index.html in such a way that it contains an HTML form via which a user can submit:
+
+a string called string1
+
+a string called string2
+
+You’re welcome to look at the HTML of the staff’s solution as needed, but do try to figure out the right syntax on your own first, as via https://www.google.com/search?q=html+forms!
+
+templates/matrix.html
+Implement templates/matrix.html in such a way that it generates, using Jinja2, a visualization of a matrix returned by distances (given some a and b) via an HTML table. In each cell of the table should be only a cost, not an operation. Along the lefmost column should be the characters from a, each in its own cell (and row); along the topmost row should be the characters from b, each in its cell (and column).
